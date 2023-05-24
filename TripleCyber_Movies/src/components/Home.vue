@@ -29,10 +29,10 @@
             
           </div>
         </router-link>
-        <div class="movie-details">
+        <!-- <div class="movie-details-btns">
             <button v-if="isFavorite(movie)" @click="removeFromFavorites(movie)" class="btn-add-favorite">Quitar de favoritos</button>
             <button v-if="!isFavorite(movie)" @click="addToFavorites(movie)" class="btn-add-favorite">Agregar a favoritos</button>
-          </div>
+          </div> -->
       </li>
     </ul>
   </div>
@@ -117,6 +117,10 @@ export default {
 </script>
 
 <style>
+.movie-details-btns{
+  margin-top: 10px;
+}
+
 .eye-icon {
   position: absolute;
   top: 50%;
@@ -131,6 +135,7 @@ export default {
 }
 
 .favorite-star {
+  z-index: 1;
   position: absolute;
   right: 0px;
   color: #FFD700;
@@ -157,7 +162,7 @@ body{
 
 .movie-item {
   flex: 0 0 150px;
-  padding: 10px;
+  margin: 10px;
   border-radius: 5px;
   color: #FFF;
   list-style: none;
