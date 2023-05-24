@@ -20,6 +20,7 @@
             <div class="eye-icon" v-show="hoveredMovie === movie">
               <font-awesome-icon icon="eye" class="eye-icon" />
             </div>
+            
           </div>
           
           <div class="movie-details">
