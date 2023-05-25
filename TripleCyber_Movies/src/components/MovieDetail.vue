@@ -9,7 +9,6 @@
           <p class="movie-release-date">Release: {{ formatDate(movie.release_date) }}</p>
           <p class="movie-rating">Rating: {{ movie.vote_average }}/10</p>
           <br>
-
           <p class="movie-rating">{{ movie.overview }}</p>
           <!-- <button @click="addToFavorites(movie)" class="btn-add-favorite">Agregar a favoritos</button> -->
         </div>
