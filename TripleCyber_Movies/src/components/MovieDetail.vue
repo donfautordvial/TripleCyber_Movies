@@ -11,6 +11,7 @@
           <br>
           <p class="movie-rating">{{ movie.overview }}</p>
           <!-- <button @click="addToFavorites(movie)" class="btn-add-favorite">Agregar a favoritos</button> -->
+          
         </div>
       </div>
     </div>
